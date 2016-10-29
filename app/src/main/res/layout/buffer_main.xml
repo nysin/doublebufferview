@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        >
+
+        <com.ljp.doubulebuffer.view.DoubleBufferView
+            android:id="@+id/bf_view"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/auto_height"
+            />
+
+        <TextView
+            android:id="@+id/tv_inditor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/bf_view"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="4dp"
+            android:layout_marginRight="4dp"
+            />
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,229 @@
+<!--
+  Copyright 2011 The Android Open Source Project
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+-->
+
+<resources>
+
+    <declare-styleable name="GEditText">
+        <attr name="drawableRightPressed" format="reference" />
+    </declare-styleable>
+    <declare-styleable name="verticaltextview">
+        <attr name="direction">
+            <enum name="uptodown" value="0" />
+            <enum name="downtoup" value="1" />
+            <enum name="lefttoright" value="2" />
+            <enum name="righttoleft" value="3" />
+        </attr>
+    </declare-styleable>
+
+
+    <!--<declare-styleable name="CircularProgress">-->
+        <!--<attr name="borderWidth" format="dimension" />-->
+    <!--</declare-styleable>-->
+    <declare-styleable name="CirclePagerIndicator">
+        <attr name="gap_width" format="dimension" />
+        <attr name="indicator_radius" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="TitleBar">
+        <attr name="default_title" format="string" />
+        <attr name="is_show_back" format="boolean" />
+        <attr name="type">
+            <enum name="default_type" value="0x00" />
+            <enum name="photo_picker_type" value="0x01" />
+            <enum name="photo_preview_type" value="0x02" />
+
+        </attr>
+
+    </declare-styleable>
+
+    <declare-styleable name="HeartLayout">
+        <attr name="initX" format="dimension" />
+        <attr name="initY" format="dimension" />
+        <attr name="xRand" format="dimension" />
+        <attr name="animLengthRand" format="dimension" />
+        <attr name="xPointFactor" format="dimension" />
+        <attr name="animLength" format="dimension" />
+        <attr name="heart_width" format="dimension" />
+        <attr name="heart_height" format="dimension" />
+        <attr name="bezierFactor" format="integer" />
+        <attr name="anim_duration" format="integer" />
+    </declare-styleable>
+    <declare-styleable name="CircularProgressBar">
+        <attr name="cpb_progress" format="integer" />
+        <attr name="cpb_progressbar_color" format="color" />
+        <attr name="cpb_background_progressbar_color" format="color" />
+        <attr name="cpb_progressbar_width" format="dimension" />
+        <attr name="cpb_background_progressbar_width" format="dimension" />
+    </declare-styleable>
+    <declare-styleable name="FitWidthTextView">
+        <attr name="fit_width_text_size" format="dimension" />
+        <attr name="fit_view_width" format="dimension" />
+        <attr name="fit_view_height" format="dimension" />
+        <attr name="fit_view_count" format="integer" />
+    </declare-styleable>
+    <declare-styleable name="CircleImageView">
+        <attr format="dimension" name="civ_border_width"/>
+        <attr format="color" name="civ_border_color"/>
+        <attr format="boolean" name="civ_border_overlay"/>
+        <attr format="color" name="civ_fill_color"/>
+        <attr format="dimension" name="border_width"/>
+        <attr format="color" name="border_color"/>
+        <attr format="boolean" name="border_overlay"/>
+    </declare-styleable>
+    <declare-styleable name="GenericDraweeView">
+        <attr format="integer" name="fadeDuration"/>
+        <attr format="float" name="viewAspectRatio"/>
+        <attr format="reference" name="placeholderImage"/>
+        <attr name="placeholderImageScaleType">
+            <enum name="none" value="-1"/>
+            <enum name="fitXY" value="0"/>
+            <enum name="fitStart" value="1"/>
+            <enum name="fitCenter" value="2"/>
+            <enum name="fitEnd" value="3"/>
+            <enum name="center" value="4"/>
+            <enum name="centerInside" value="5"/>
+            <enum name="centerCrop" value="6"/>
+            <enum name="focusCrop" value="7"/>
+        </attr>
+        <attr format="reference" name="retryImage"/>
+        <attr name="retryImageScaleType">
+            <enum name="none" value="-1"/>
+            <enum name="fitXY" value="0"/>
+            <enum name="fitStart" value="1"/>
+            <enum name="fitCenter" value="2"/>
+            <enum name="fitEnd" value="3"/>
+            <enum name="center" value="4"/>
+            <enum name="centerInside" value="5"/>
+            <enum name="centerCrop" value="6"/>
+            <enum name="focusCrop" value="7"/>
+        </attr>
+        <attr format="reference" name="failureImage"/>
+        <attr name="failureImageScaleType">
+            <enum name="none" value="-1"/>
+            <enum name="fitXY" value="0"/>
+            <enum name="fitStart" value="1"/>
+            <enum name="fitCenter" value="2"/>
+            <enum name="fitEnd" value="3"/>
+            <enum name="center" value="4"/>
+            <enum name="centerInside" value="5"/>
+            <enum name="centerCrop" value="6"/>
+            <enum name="focusCrop" value="7"/>
+        </attr>
+        <attr format="reference" name="progressBarImage"/>
+        <attr name="progressBarImageScaleType">
+            <enum name="none" value="-1"/>
+            <enum name="fitXY" value="0"/>
+            <enum name="fitStart" value="1"/>
+            <enum name="fitCenter" value="2"/>
+            <enum name="fitEnd" value="3"/>
+            <enum name="center" value="4"/>
+            <enum name="centerInside" value="5"/>
+            <enum name="centerCrop" value="6"/>
+            <enum name="focusCrop" value="7"/>
+        </attr>
+        <attr format="integer" name="progressBarAutoRotateInterval"/>
+        <attr name="actualImageScaleType">
+            <enum name="none" value="-1"/>
+            <enum name="fitXY" value="0"/>
+            <enum name="fitStart" value="1"/>
+            <enum name="fitCenter" value="2"/>
+            <enum name="fitEnd" value="3"/>
+            <enum name="center" value="4"/>
+            <enum name="centerInside" value="5"/>
+            <enum name="centerCrop" value="6"/>
+            <enum name="focusCrop" value="7"/>
+        </attr>
+        <attr format="reference" name="backgroundImage"/>
+        <attr format="reference" name="overlayImage"/>
+        <attr format="reference" name="pressedStateOverlayImage"/>
+        <attr format="boolean" name="roundAsCircle"/>
+        <attr format="dimension" name="roundedCornerRadius"/>
+        <attr format="boolean" name="roundTopLeft"/>
+        <attr format="boolean" name="roundTopRight"/>
+        <attr format="boolean" name="roundBottomRight"/>
+        <attr format="boolean" name="roundBottomLeft"/>
+        <attr format="color" name="roundWithOverlayColor"/>
+        <attr format="dimension" name="roundingBorderWidth"/>
+        <attr format="color" name="roundingBorderColor"/>
+        <attr format="dimension" name="roundingBorderPadding"/>
+    </declare-styleable>
+    <declare-styleable name="RecyclerView">
+        <attr format="string" name="layoutManager"/>
+        <attr name="android:orientation"/>
+        <attr format="integer" name="spanCount"/>
+        <attr format="boolean" name="reverseLayout"/>
+        <attr format="boolean" name="stackFromEnd"/>
+    </declare-styleable>
+    <declare-styleable name="wheelview">
+        <attr name="gravity">
+            <enum name="center" value="17"/>
+            <enum name="left" value="3"/>
+            <enum name="right" value="5"/>
+        </attr>
+        <attr format="dimension" name="textSize"/>
+        <attr format="color" name="textColorOut"/>
+        <attr format="color" name="textColorCenter"/>
+        <attr format="color" name="dividerColor"/>
+    </declare-styleable>
+
+    <declare-styleable name="RadioButton">
+        <attr name="radio_color" format="color"/>
+        <attr name="radio_checked_color" format="color"/>
+    </declare-styleable>
+    <declare-styleable name="PointRemindView">
+        <attr name="remind_color" format="color"/>
+    </declare-styleable>
+
+
+    <attr name="mborderRadius" format="dimension"></attr>
+    <attr name="mtype">
+        <enum name="mcircle" value="0"></enum>
+        <enum name="mround" value="1"></enum>
+    </attr>
+
+    <declare-styleable name="CoustomRadiusImageView">
+        <attr name="mborderRadius" ></attr>
+        <attr name="mtype"></attr>
+    </declare-styleable>
+
+    <declare-styleable name="MyGallery">
+        <attr name="animatioDuration" format="integer"/>
+        <attr name="spacing" format="dimension"/>
+        <attr name="unselectedAlpha" format="float"/>
+    </declare-styleable>
+
+    <declare-styleable name="CircleFlowIndicator">
+        <attr name="activeColor" format="color"/>
+        <attr name="inactiveColor" format="color"/>
+        <attr name="cradius" format="dimension"/>
+        <attr name="ccentered" format="boolean"/>
+        <attr name="fadeOut" format="integer"/>
+        <attr name="inactiveType">
+            <flag name="stroke" value="0"/>
+            <flag name="fill" value="1"/>
+        </attr>
+        <attr name="activeType">
+            <flag name="stroke" value="0"/>
+            <flag name="fill" value="1"/>
+        </attr>
+        <attr name="circleSeparation" format="dimension"/>
+        <attr name="activeRadius" format="dimension"/>
+    </declare-styleable>
+
+    <declare-styleable name="ratioImageView">
+        <attr name="imgRatio" format="float" />
+    </declare-styleable>
+</resources>
